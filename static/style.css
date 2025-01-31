@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Rubik+Dirt&family=Rubik+Distressed&display=swap" rel="stylesheet');
+@import url("https://fonts.googleapis.com/css?family=Rubik One");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFF7EB;
+}
+
+.navbar{
+   background-color: #FFF0C8;
+   display: flex;
+   width: 1920px;
+   height: 121px;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+}
+
+/* This is the styling for the logo --------------------------------------------------------------------------------------------------------- */
+
+.logo{
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.rza-logo{
+    font-size: 70px;
+    text-decoration: none;
+    font-family: "Rubik Dirt", serif;
+    color: #0D3B66;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* This is the styling for the left side of the navigation bar ------------------------------------------------------------------------------ */
+
+.Left{
+    display: flex;
+    font-size: 32px;
+    font-family: "Rubik One", serif;
+    align-items: center;
+    width: 990px;
+    gap: 4em; 
+    margin-left: 2em;
+}
+
+.discover-link{
+    color: #704d8a;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.discover-link:hover{
+    color: #E39E1D;
+}
+
+.tickets-link{
+    color: #704d8a;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.tickets-link:hover{
+    color: #E39E1D;
+}
+
+.about-us-link{
+    width: 160px;
+    color: #704d8a;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.about-us-link:hover{
+    color: #E39E1D;
+}
+
+.support-link{
+    color: #704d8a;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.support-link:hover{
+    color: #E39E1D;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* This is the styling for the right side of the navigation bar ------------------------------------------------------------------------------ */
+
+.Right{
+    position: relative;
+    display: flex;
+    gap: 4em;
+    left: 90px;
+    width: 25em;
+}
+
+.login-button{
+    font-family: "Rubik One", serif;
+    font-size: 32px;
+    width: 6em;
+    height: 50px;
+    border-radius: 15px;
+    border-width: 0px;
+    border-color: #E39E1D;
+    background-color: #E39E1D;
+    color: #FFF0C8;
+    cursor:pointer;
+}
+
+.signup-button{
+    font-family: "Rubik One", serif;
+    font-size: 32px;
+    width: 6em;
+    height: 50px;
+    border-radius: 15px;
+    border-width: 0px;
+    border-color:#7836A4;
+    background-color: #7836A4;
+    color: #FFF0C8;
+    cursor: pointer;
+}
+
+.logout-button{
+    font-family: "Rubik One", serif;
+    font-size: 32px;
+    width: 6em;
+    height: 50px;
+    border-radius: 15px;
+    border-width: 0px;
+    border-color: #E39E1D;
+    background-color: #E39E1D;
+    color: #FFF0C8;
+    cursor:pointer;
+}
+
+#cart-icon{
+    width: 40px;
+    height: 40px;
+}
+
+#person-icon{
+    width: 40px;
+    height: 40px;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* This is the styling for the image in the home screen ------------------------------------------------------------------------------------- */
+
+#home-zebra{
+    display: flex;
+    position: absolute;
+    width: 1063px;
+    height: 1055px;
+    border-width: 0px;
+    border-radius: 1em;
+    margin-left: 857px;
+    z-index: -1;
+    margin-top: -6em;
+}
+
+.home-page-title{
+    font-family: "Rubik Dirt", serif;
+    position: absolute;
+    font-size: 96px;
+    color: #0D3B66;
+    margin-left: 150px;
+    margin-top: 45px;
+}
+
+.home-page-sub{
+    text-align: center;
+    width: 475px;
+    font-family: "Rubik Distressed", serif;
+    position: absolute;
+    font-size: 64px;
+    color: #704D8A;
+    margin-left: 180px;
+    margin-top: 189px;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------- */

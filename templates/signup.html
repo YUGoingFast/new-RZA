@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+{% block title %}
+Signing Up
+{% endblock %}
+
+{% block content %}
+<html>
+    <body>
+        <form action="/signup" method="POST" id="signup-form">
+
+            <h2>Signup</h2>
+            <div class="reg-email-container">
+            <input type="text" name="email" placeholder="Email...">
+            </div>
+
+            <div class="reg-fname-container">
+            <input type="text" name="fname" placeholder="First Name...">
+            </div>
+
+            <div class="reg-lname-container">
+            <input type="text" name="sname" placeholder="Surname...">
+            </div>
+
+            <div class="reg-password-container">
+            <input type="password" name="password" placeholder="Password...">
+            </div>
+
+            <button type="submit" name="action" value="signup">Submit</button>
+        </form>
+        
+        {% if error %}
+            <p class="error"><strong>Error: </strong> {{ error }}
+        {% endif %}
+        
+    </body>
+
+</html>
+{% endblock %}
