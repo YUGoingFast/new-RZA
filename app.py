@@ -90,9 +90,6 @@ def logout_user():
     session.pop('user', None)
     return render_template('home.html')
         
-
-# Test
-
 # This is for running the application (can be ignored)
 if __name__ == "__main__":
     app.run(debug=True)
