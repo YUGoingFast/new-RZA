@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block title %}
+Loggin In
+{% endblock %}
+{% block content %}
+
+<form action="/login" method="POST" id="login-form">
+
+    <h2>Log In</h2>
+    <div class="log-email-container">
+        <input type="text" name="email" placeholder="Email address...">
+    </div>
+
+    <div class="log-password-container">
+        <input type="password" id="password" name="password" placeholder="Password...">
+    </div>
+    
+    <div class="submit-button">
+    <button type="submit" name="action" value="login">Submit</button>
+</form>
+
+{% endblock %}

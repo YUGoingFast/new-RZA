@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-menu">
+            
+            <div class="logo">
+            
+                <a href="/" class="rza-logo">
+                    RZA
+                </a>
+
+            </div>
+
+            <div class="Left">
+                <a href="/discover" class="discover-link">
+                    Discover
+                </a>
+
+                <a href="/tickets" class="tickets-link">
+                    Tickets
+                </a>
+
+                <a href="/about-us" class="about-us-link">
+                    About Us
+                </a>
+
+                <a href="/support" class="support-link">
+                    Support
+                </a>
+            </div>
+
+            <div class="Right">
+
+                </a>
+                
+                {% if session.get('user') %}
+
+                    <img src="static/person-icon.png" id="person-icon">
+
+                    <img src="static/cart.png" id="cart-icon">
+
+                    
+                    <a href="/logout" class="logout-link">
+                        <button class="logout-button"> Logout </button>
+                    </a>
+
+                {% else %}
+                    <a href="/login" class="login-link">
+                        <button class="login-button"> Log in </button>
+                    </a>
+
+                    <a href="/signup" class="signup-link">
+                        <button class="signup-button"> Sign up </button>
+                    </a>
+                {% endif %}
+
+            </div>
+        </ul>
+    </nav>
+
+    <div class="body-content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+
+</body>
+</html>
