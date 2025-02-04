@@ -3,3 +3,5 @@ flask_session/
 RZA.db-journal
 __pycache__/
 RZA.db
+*.py[cod]
+*$py.class

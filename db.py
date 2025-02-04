@@ -14,6 +14,6 @@ def add_user(fname, lname, email, password):
     conn.close()
 
 def verify_user(email, password):
-    cursor.execute("SELECT * FROM users WHERE Email = ? AND password = ?", (email, password))
+    cursor.execute("SELECT * FROM users WHERE Email = ? AND Password = ?", (email, password))
     user = cursor.fetchone()
     return user

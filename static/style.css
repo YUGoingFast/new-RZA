@@ -101,7 +101,6 @@ body{
     display: flex;
     gap: 4em;
     left: 90px;
-    width: 25em;
 }
 
 .login-button{
@@ -155,7 +154,7 @@ body{
 
 /*------------------------------------------------------------------------------------------------------------------------------------------- */
 
-/* This is the styling for the image in the home screen ------------------------------------------------------------------------------------- */
+/* This is the styling for everything in the home screen ------------------------------------------------------------------------------------- */
 
 #home-zebra{
     display: flex;
@@ -187,6 +186,22 @@ body{
     color: #704D8A;
     margin-left: 180px;
     margin-top: 189px;
+}
+
+.book-here{
+    position: absolute;
+    font-family: "Rubik One", serif;
+    width: 439.85px;
+    height: 108px;
+    font-size: 32px;
+    border-radius: 15px;
+    border-width: 0px;
+    border-color: #E39E1D;
+    background-color: #E39E1D;
+    color: #FFF0C8;
+    cursor:pointer;
+    margin-left: 180px;
+    margin-top: 13em;
 }
 
 

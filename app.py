@@ -5,6 +5,7 @@ from db import add_user, verify_user
 #from db import add_user, add_tutor, verify_user, verify_tutor
 app = Flask(__name__)
 
+# This initializes the sessions so it can be used across the program
 app.config['SESSION_TYPE'] = ("filesystem")
 Session(app)
 
@@ -90,7 +91,6 @@ def logout_user():
     session.pop('user', None)
     return render_template('home.html')
         
-# Test
 
 # This is for running the application (can be ignored)
 if __name__ == "__main__":
