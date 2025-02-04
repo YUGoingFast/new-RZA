@@ -1,0 +1,5 @@
+flask_session/
+.venv/
+RZA.db-journal
+__pycache__/
+RZA.db
