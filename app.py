@@ -55,7 +55,7 @@ def signup():
             elif email.isspace() or fname.isspace() or lname.isspace() or password.isspace():
                 error = "Missing Credentials"
                 return render_template("signup.html", error = error)
-            elif '@' not in email:
+            elif '@gmail.com' not in email and '@hotmail.com' and '@proton.me':
                 error = "Email not valid"
                 return render_template("signup.html", error = error)
             # Run the function in db.py that will add the user information into the database
